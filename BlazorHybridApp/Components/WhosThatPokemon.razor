@@ -1,0 +1,23 @@
+﻿<div class="container">
+    @if (_loading)
+    {
+        <Loader></Loader>
+    }
+    else
+    {
+        <div class="title">
+            Who's that Pokémon?!
+        </div>
+
+        <WhosThatPokemonData PokemonId="_pokemonData.Id" PokemonName="@_pokemonData.Name" Show="_showResult"></WhosThatPokemonData>
+
+        <PokemonSelector @ref="_pokemonSelector"></PokemonSelector>
+
+        <MudButton @onclick="Confirm" class="confirm-button"
+                   Variant="Variant.Filled">Confirm</MudButton>
+
+        <WhosThatPokemonResult Correct="_correct" Show="_showResult"></WhosThatPokemonResult>
+
+        <MudButton class="confirm-button" Variant="Variant.Filled" @onclick="ShowNextAsync">Show Next</MudButton>
+    }
+</div>

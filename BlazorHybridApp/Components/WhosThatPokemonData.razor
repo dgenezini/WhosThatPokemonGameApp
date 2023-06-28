@@ -1,0 +1,22 @@
+﻿<div class="container">
+    @if (!Show)
+    {
+        <div>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/@(PokemonId).png"
+                 class="pokemon-image pokemon-image-hidden" />
+        </div>
+        <div class="pokemon-name">
+            ?????
+        </div>
+    }
+    else
+    {
+        <div>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/@(PokemonId).png"
+                 class="pokemon-image" />
+        </div>
+        <div class="pokemon-name">
+            <p>@PokemonName (#@PokemonId)</p>
+        </div>
+    }
+</div>

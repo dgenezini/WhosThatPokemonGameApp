@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#FF0000</color>
+	<color name="colorPrimaryDark">#DD0000</color>
+	<color name="colorAccent">#BB0000</color>
+
+	<style name="MainTheme" parent="@style/Maui.SplashTheme">
+		<item name="android:statusBarColor">#FF0000</item>
+		<item name="android:navigationBarColor">#FF0000</item>
+	</style>
+</resources>

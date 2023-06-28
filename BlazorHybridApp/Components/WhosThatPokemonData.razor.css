@@ -1,0 +1,20 @@
+﻿.container {
+    font-family: Verdana;
+    color: black;
+}
+
+.pokemon-image {
+    width: 200px;
+    height: 200px;
+    filter: drop-shadow(2px 4px 6px black);
+    margin: auto;
+    display: block;
+}
+
+.pokemon-image-hidden {
+    filter: brightness(0) drop-shadow(2px 4px 6px black)
+}
+
+.pokemon-name {
+    font-size: large;
+}

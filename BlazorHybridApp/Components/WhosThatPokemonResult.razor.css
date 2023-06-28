@@ -1,0 +1,12 @@
+﻿.container {
+    font-family: Verdana;
+    font-size: large;
+}
+
+.game-result-correct {
+    color: green;
+}
+
+.game-result-wrong {
+    color: red;
+}

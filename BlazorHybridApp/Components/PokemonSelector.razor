@@ -1,0 +1,17 @@
+﻿@using BlazorHybridApp.Domain;
+
+<div class="container">
+    @if (_pokemon == null)
+    {
+        <MudSkeleton SkeletonType="SkeletonType.Rectangle" Width="100%" Height="30px" />
+    }
+    else
+    {
+        <MudAutocomplete @ref="_selectedPokemon"
+                         T="PokemonInfo" @bind-Value="SelectedPokemon"
+                         ResetValueOnEmptyText="true"
+                         Label="Who's that pokémon?"
+                         ToStringFunc="@(e => e?.Name)"
+                         SearchFunc="@Search" />
+    }
+</div>
